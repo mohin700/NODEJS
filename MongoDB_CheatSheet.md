@@ -1,8 +1,9 @@
-**Do Authintacitation DB**
-1. ##Select Admin DB 
-use admin
+# Do Authintacitation DB
+### 1. Select Admin DB 
+```use admin```
 
-2. ##Create Root User - 
+### 2. Create Root User -
+```
 db.createUser(
   {
     user: "root",
@@ -10,8 +11,10 @@ db.createUser(
     roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
   }
 )
+```
 
-3. ##Create New DB level User -
+### 3. Create New DB level User -
+``` 
  db.createUser(
    {
      user: "cryptacoraUser",
@@ -19,18 +22,20 @@ db.createUser(
      roles: [ { role: "dbOwner", db: "cryptacora" } ]
    }
  )
+``` 
  
- 
-4. ## Update User Info
+### 4. Update User Info
+```
 db.updateUser(
     "root", //DB user 
   {
     roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ] //Updated Data
   }
 )
+```
 
-
-5. ## Connect from application 
+### 5. Connect from application 
+```
 mongoose.createConnection(
   "mongodb://localhost:27017/dbName", // url with DB
   {
@@ -45,3 +50,4 @@ mongoose.createConnection(
     useFindAndModify: false 
   }
 ); 
+```
