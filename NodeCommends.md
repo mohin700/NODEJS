@@ -14,9 +14,14 @@
   nvm list-remote
   ```
   
-  
- # install the latest available version of Node.js
+ # NODE JS 
+ ### install the latest available version of Node.js
  ```
  nvm install node
  ```
   
+### Install two more versions, the latest LTS version and version 14.16.0
+```
+nvm install --lts
+nvm install 14.16.0
+```
