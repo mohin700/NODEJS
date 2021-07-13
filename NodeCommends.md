@@ -39,6 +39,9 @@ nvm use 14.16.0
 ```
 nvm alias default 14.16.0
 ```
-
-
-
+# NPM
+### Change NPM Version 
+```
+npm install npm@latest -g
+npm install npm@5.4.0 -g
+```
