@@ -25,3 +25,25 @@
 nvm install --lts
 nvm install 14.16.0
 ```
+  
+### Get can list the installed Node.js versions
+```
+nvm ls
+```
+  
+### Change the currently active version
+```
+nvm use 14.16.0
+```
+### change the default Node.js version
+```
+nvm alias default 14.16.0
+```
+
+### Change the currently active version
+```
+nvm use 14.16.0
+```
+
+
+
