@@ -40,10 +40,5 @@ nvm use 14.16.0
 nvm alias default 14.16.0
 ```
 
-### Change the currently active version
-```
-nvm use 14.16.0
-```
-
 
 
