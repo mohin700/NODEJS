@@ -1,4 +1,4 @@
-# Do Authintacitation DB
+# Authintacitation MongoDB
 ### 1. Select Admin DB 
 ```use admin```
 
